@@ -11,7 +11,7 @@
 <header>
 		<nav>
 			<ul>
-				<li ><a href="#"><img src="images/logo_final.png" alt="logo"/></a></li>
+				<li ><a href="#"> <%= image_tag 'logo_final.png', size: "90x90" %> </a></li>
 				<li class = button_join> Join Waitlist </li>
 			</ul>
 		</nav>
@@ -20,7 +20,8 @@
 
 	<h1>Interaction</h1>
 	<div> Who are you playing against ? </div>
-	
+
+	<%= render 'shared/flash_messages'%>
 	<%= yield %>
 
 </body>

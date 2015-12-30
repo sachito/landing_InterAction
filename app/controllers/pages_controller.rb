@@ -9,6 +9,7 @@ class PagesController < ApplicationController
 		if @email.save
 			redirect_to "/confirmation"
 		else
+			flash[:info] = "Invalid email adress"
 			redirect_to root_path
 		end
 	end
