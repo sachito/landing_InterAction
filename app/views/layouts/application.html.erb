@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SachabellaicheCom</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+<header>
+		<nav>
+			<ul>
+				<li ><a href="#"><img src="images/logo_final.png" alt="logo"/></a></li>
+				<li class = button_join> Join Waitlist </li>
+			</ul>
+		</nav>
+	
+</header>
+
+	<h1>Interaction</h1>
+	<div> Who are you playing against ? </div>
+	
+	<%= yield %>
+
+</body>
+
+</html>
