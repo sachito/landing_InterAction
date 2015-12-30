@@ -11,10 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151228143913) do
+ActiveRecord::Schema.define(version: 20151230201313) do
 
   create_table "beta_subscribers", force: :cascade do |t|
-    t.string "email_adress"
+    t.string   "email_adress"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end

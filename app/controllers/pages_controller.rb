@@ -1,11 +1,11 @@
 class PagesController < ApplicationController
 
 	def landing
-		@email = Beta_subscriber.new
+		@email = BetaSubscriber.new
 	end
 
 	def create
-		@email = Beta_subscriber.new(email_params)
+		@email = BetaSubscriber.new(email_params)
 		if @email.save
 			redirect_to "/confirmation"
 		else
